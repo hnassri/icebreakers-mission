@@ -1,0 +1,2 @@
+module SoudainsHelper
+end

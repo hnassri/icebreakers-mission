@@ -1,0 +1,9 @@
+<h1>On commence !</h1>
+<p>Voici l'ordre des participants :</p>
+<ul>
+	<% @members.each_with_index do |member, index| %>
+		<li>Personne n°<%=index+1%> : <%= member.nickname %></li>
+	<% end %>
+</ul>
+
+<%= button_to "Revenir à l'accueil", users_path %>
