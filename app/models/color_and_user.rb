@@ -1,0 +1,2 @@
+class ColorAndUser < ApplicationRecord
+end
