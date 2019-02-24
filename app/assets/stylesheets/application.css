@@ -16,3 +16,44 @@
  #LoginForm{
    padding: 8%;
  }
+
+
+/************************/
+/*        Banner        */
+/************************/
+.banner-overlay {
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(thp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  padding-top: 200px;
+  padding-bottom:200px;
+}
+.banner-heading h2 {
+  color:#fff;
+  font-size: 42px;
+  font-weight: 600;
+  
+
+  }
+.banner-heading P {
+  color:#fff;
+  padding-bottom:20px;
+  font-size: 19px;
+  font-weight: 400;
+  }
+ 
+  /* BANNER 2 */
+  .banner-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.37)), url(teambuilding.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color:white;
+    padding-top: 150px;
+    padding-bottom:150px;
+  }
+.jumbotron {
+  margin-bottom: 0px !important;
+}

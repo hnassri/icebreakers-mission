@@ -1,0 +1,14 @@
+<div class= "banner-sektion banner-overlay ">
+    <div class="container text-center">
+        <div class="col-md-12">
+            <div class="banner-heading ">
+                <h2> Salut tout le monde </h2>
+                <P>Avant de commencer à jouer, il va falloir enregistrer les membres de ton équipe ci-dessous</P>      
+            <%= form_tag(users_path, method: "post") do %>
+                <%= text_field_tag 'nickname', @user.nickname%>
+               <button class="btn btn-primary btn-md" type="submit"> Ajouter un Teammate</button>
+                <% end %>
+              </div> 
+          </div>
+        </div>
+      </div>

@@ -1,13 +1,33 @@
-<h1>Le jeu des couleurs</h1>
-<p>Le jeu va prendre une personne du groupe au hasard, puis lui donner une couleur. En fonction de la coulaur, la personne devra dire quelques chose sur elle-même.</p>
-<h3>Liste des couleurs</h3>
-<p><b><span style="color: #B03060;">Rouge</span></b> : la personne devra dire l'un de ses loisirs préférés</p>
-<p><b><span style="color: #016936;">Vert</span></b> : le personne devra dire l'un de ses lieux favoris sur cette planète</p>
-<p><b><span style="color: #0E6EB8;">Bleu</span></b> : la personne devra dire l'un de ses souvenirs préférés</p>
-<p><b><span style="color: #FFD700;">Jaune</span></b> : la personne devra dire l'un de ses boulots de rêve</p>
-<p><b><span style="color: #B413EC;">Violet</span></b> : la personne devra dire l'un de ses plats préférés</p>
-<p><b><span style="color: #FE9A76;">Orange</span></b> : la personne peut dire ce qu'elle veut (joker)</p>
-
-<h3>Comment jouer ?</h3>
-<p>Pour jouer, cliquer sur le bouton :</p>
-<p><%= link_to "Joue par ici", color_index_path %></p>
+<%= render 'color/banner2'%>
+<div class="bg-cl bg-light">
+  <div class= "mx-5 my-5 ">
+	  <div class="container rounded box-shadow bg-white">
+      <div class= "row">
+        <div class="col-sm-8">
+          <h3 class= "text-center">Les règles du jeu</h3>
+          <p>Le jeu va prendre une personne du groupe au hasard, puis lui donner une couleur. </p>
+          <p>En fonction de la coulaur, la personne devra dire quelques chose sur elle-même.</p>
+        </div>
+        <div class="col-sm-4 my-5">
+          <h3>Tout compris ?</h3>
+          <p>Pour jouer, cliquer sur le bouton :</p>
+          <button class="btn btn-primary btn-md" href="<%= color_index_path %>"> Let's begin </button>
+        </div>
+      </div>
+      <div class="row">
+    		<div class="col-sm-8 my-3 px-5">  
+            <h3>Liste des couleurs</h3>
+            <p><b><span style="color: #B03060;">Rouge</span></b> : la personne devra dire l'un de ses loisirs préférés</p>
+            <p><b><span style="color: #016936;">Vert</span></b> : le personne devra dire l'un de ses lieux favoris sur cette planète</p>
+            <p><b><span style="color: #0E6EB8;">Bleu</span></b> : la personne devra dire l'un de ses souvenirs préférés</p>
+            <p><b><span style="color: #FFD700;">Jaune</span></b> : la personne devra dire l'un de ses boulots de rêve</p>
+            <p><b><span style="color: #B413EC;">Violet</span></b> : la personne devra dire l'un de ses plats préférés</p>
+            <p><b><span style="color: #FE9A76;">Orange</span></b> : la personne peut dire ce qu'elle veut (joker)</p>
+        </div>
+        <div class="col-sm-4 my-5">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

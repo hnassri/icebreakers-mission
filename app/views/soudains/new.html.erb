@@ -1,6 +1,20 @@
-<h1>Le jeu du "puis soudain"</h1>
-<p>Le jeu va prendre une personne au hasard, puis elle devra imaginer une histoire avec 3 phrases. À la fin de ces trois phrases, le jeu va insérer "PUIS SOUDAIN", et proposer à une personne du groupe tirée au hasard de continuer. Cette personne devra dire 3 phrases, et ainsi de suite.</p>
-
-<h3>Comment jouer ?</h3>
-<p>Pour jouer, cliquer sur le bouton :</p>
-<%= link_to "Joue par ici", soudains_path %>
+<%= render 'soudains/banner2'%>
+<div class="bg-cl bg-light">
+  <div class= "mx-5 my-5 ">
+	  <div class="container rounded box-shadow bg-white">
+      <div class= "row">
+        <div class="col-sm-8">
+          <h3 class="text-center">Les règles ?</h3>
+            <p>Le jeu va prendre une personne au hasard, puis elle devra imaginer une histoire avec 3 phrases. </p>
+            <p> À la fin de ces trois phrases, le jeu va insérer "PUIS SOUDAIN", et proposer à une personne du groupe tirée au hasard de continuer. </p>
+            <p>Cette personne devra dire 3 phrases, et ainsi de suite.</p>
+        </div>
+        <div class="col-sm-4 pt-5">
+          <h3>Tout compris ?</h3>
+          <p>Pour jouer, cliquer sur le bouton :</p>
+          <button class="btn btn-primary btn-md" href="<%=soudains_path %>"> Let's begin </button>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
