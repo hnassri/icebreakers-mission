@@ -1,0 +1,15 @@
+<h1>Salut tout le monde</h1>
+
+<%= form_tag(users_path, method: "post") do %>
+
+  <%= label_tag 'nickname' %>
+  <%= text_field_tag 'nickname', @user.nickname%>
+  <%= submit_tag 'Ajouter le participant'%>
+  <% end %>
+
+<% current_group.users.each do |user| %>
+  <p><%= user.nickname %></p>
+  <%= link_to "Supprimer ce membre", user_path(user.id), method: :delete %>
+<%end%>
+
+<h2><%= link_to "Jouer au jeux des couleurs", new_color_path %></h2>
