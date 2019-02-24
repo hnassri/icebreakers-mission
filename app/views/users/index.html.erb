@@ -5,7 +5,7 @@
   <%= label_tag 'nickname' %>
   <%= text_field_tag 'nickname', @user.nickname%>
   <%= submit_tag 'Ajouter le participant'%>
-  <% end %>
+<% end %>
 
 <% current_group.users.each do |user| %>
   <p><%= user.nickname %></p>

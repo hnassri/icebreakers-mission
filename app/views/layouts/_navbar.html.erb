@@ -1,14 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand"> THP icebreakers</a>
+      <a class="navbar-brand" href="<%= root_path %>"> THP icebreakers</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
+        <li class="nav-item active nav-link">
+            <a class="nav-link" href="<%= users_path %>">Jeu 1</a>
+            </li>
           <li class="nav-item active nav-link">
-            <a class="nav-link" href="#">Jeu 1</a>
+            <a class="nav-link" href="<%= truths_path %>">Jeu 1</a>
+            </li>
           <li class="nav-item nav-link">
-            <a class="nav-link" href="#">Jeu 2</a>
+            <a class="nav-link" href="<%= color_index_path %>">Jeu 2</a>
           </li>
         </ul>
     </div>
