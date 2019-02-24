@@ -1,0 +1,13 @@
+<% if @var %>
+<h1><%= @member.nickname %> !</h1>
+<p>Voici une question pour toi :<br>
+<%= @question.content %></p>
+
+<h3>Joueur suivant ?</h3>
+<%= link_to "Joue par ici", question_path(@col.id), method: :delete %>
+
+<% else %>
+
+<h1>Le jeu est terminé </h1>
+
+<% end %>

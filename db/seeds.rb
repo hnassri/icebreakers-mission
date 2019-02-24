@@ -1,14 +1,28 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-Color.create(name: "Rouge", content: "La personne devra dire l'un de ses loisirs préférés", hex_code: "#B03060")
-Color.create(name: "Vert", content: "le personne devra dire l'un de ses lieux favoris sur cette planète", hex_code: "#016936")
-Color.create(name: "Bleu", content: "la personne devra dire l'un de ses souvenirs préférés", hex_code: "#0E6EB8")
-Color.create(name: "Jaune", content: "la personne devra dire l'un de ses boulots de rêve", hex_code: "#FFD700")
 
-Color.create(name: "Violet", content: "la personne devra dire l'un de ses plats préférés", hex_code: "#B413EC")
-Color.create(name: "Orange", content: "la personne peut dire ce qu'elle veut (joker)", hex_code: "#FE9A76")
+# Color.create(name: "Rouge", content: "La personne devra dire l'un de ses loisirs préférés", hex_code: "#B03060")
+# Color.create(name: "Vert", content: "le personne devra dire l'un de ses lieux favoris sur cette planète", hex_code: "#016936")
+# Color.create(name: "Bleu", content: "la personne devra dire l'un de ses souvenirs préférés", hex_code: "#0E6EB8")
+# Color.create(name: "Jaune", content: "la personne devra dire l'un de ses boulots de rêve", hex_code: "#FFD700")
+
+# Color.create(name: "Violet", content: "la personne devra dire l'un de ses plats préférés", hex_code: "#B413EC")
+# Color.create(name: "Orange", content: "la personne peut dire ce qu'elle veut (joker)", hex_code: "#FE9A76")
+Question.create(kind: "icebreaker", content: "D'où viens-tu?")
+Question.create(kind: "icebreaker", content: "Ta destination idéale pour partir en voyage, c'est quoi?")
+Question.create(kind: "icebreaker", content: "As-tu des frères et soeurs?")
+Question.create(kind: "icebreaker", content: "Si il y a une chose en toi qu'il faut savoir, ça serait quoi?")
+Question.create(kind: "icebreaker", content: "Pain au chocolat ou chocolatine?")
+Question.create(kind: "icebreaker", content: "Les céréales avant le lait ou après?")
+Question.create(kind: "icebreaker", content: "Quel est ton plat préféré?")
+Question.create(kind: "icebreaker", content: "Raconte nous un de tes plus beaux souvenirs d'enfance?")
+Question.create(kind: "icebreaker", content: "Pourquoi THP?")
+Question.create(kind: "icebreaker", content: "Quelle est ta plus grande qualité selon toi?")
+Question.create(kind: "icebreaker", content: "Quelle est ton plus grand défaut selon toi?")
+Question.create(kind: "icebreaker", content: "Quelle est ta blague préféré?")
+Question.create(kind: "icebreaker", content: "Quelle est l'endroit où tu te sens le mieux?")
+Question.create(kind: "icebreaker", content: "QUelle est le plus belle endroit où tu es allé?")
+Question.create(kind: "icebreaker", content: "De quoi ne pourrais tu pas te passer?")
+Question.create(kind: "icebreaker", content: "Cite une chose que tu détestes")
+Question.create(kind: "icebreaker", content: "As-tu un hobby?")
+Question.create(kind: "icebreaker", content: "As-tu déjà codé avant THP?")
+
+

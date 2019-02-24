@@ -28,12 +28,13 @@ class UsersController < ApplicationController
 
     current_group.users.each do |user|
       user.color_and_users.destroy_all
-      ColorAndUser.create(color_id: 7 , user_id: user.id)
-      ColorAndUser.create(color_id: 8 , user_id: user.id)
-      ColorAndUser.create(color_id: 9 , user_id: user.id)
-      ColorAndUser.create(color_id: 10 , user_id: user.id)
-      ColorAndUser.create(color_id: 11 , user_id: user.id)
-      ColorAndUser.create(color_id: 12 , user_id: user.id)
+      user.question_and_users.destroy_all
+      Color.all.each do |color|
+        ColorAndUser.create(color_id: color.id , user_id: user.id)
+      end
+      Question.all.each do |question|
+        QuestionAndUser.create(question_id: question.id , user_id: user.id)
+      end
     end
   end
 end
