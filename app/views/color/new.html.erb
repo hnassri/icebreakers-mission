@@ -1,28 +1,39 @@
-<%= render 'color/banner2'%>
-<div class="bg-light">
-<div class= "mx-5 my-5 ">
-	  <div class="container rounded box-shadow bg-white">
-      <div class= "row">
-        <div class="col-sm-8">
-          <h3 class= "text-center">Les règles du jeu</h3>
-          <p>Le jeu va prendre une personne du groupe au hasard, puis lui donner une couleur. </p>
-          <p>En fonction de la coulaur, la personne devra dire quelques chose sur elle-même.</p>
-        </div>
-        <div class="col-sm-4 my-5">
-          <h3>Tout compris ?</h3>
-          <p>Pour jouer, cliquer sur le bouton :</p>
-           <%= link_to " Let's begin ", color_index_path, class: "btn btn-primary btn-md" %>
+<section class ="bg-light">
+	<div class="container rounded box-shadow bg-white">
+  		<div class="row">
+    		<div class="col-sm-8">
+    			<img class="img-fluid" src="<%= image_url("colors.jpg")%>" style='heigh:30%; width:100%;'/>
+    		</div>
+    		<div class="col-sm-4 pt-5">
+    			<h3>Le jeu des couleurs</h3>
+          <p class="text-secondary"> Pas de problème pour les daltoniens, on donne les questions associées aux couleurs, puis, au pire, vos teammates sont là ! </p>
+    		</div>
+  		</div>
+  		<div class="row border border-ligth py-3">
+  			<div class="col-sm-8 pl-4">
+  				<p class="text-primary">Vous savez, les goûts et les couleurs tout ça tout ça... <i class="text-primary fas fa-palette ml-2 fa-2x"></i> </p>
+  			</div>
+  			<div class="col-sm-4">
+         <%= link_to " Let's begin ", color_index_path, class: "btn btn-primary btn-lg btn-block" %>
+			</div>
+  		</div>
+  		<div class="row">
+    		<div class="col-sm-10 my-3 px-5">
+    			<h4>Les règles du jeu</h4>
+          <p>Le jeu va selectionner une personne du groupe au hasard, puis lui attribuer une couleur. </p>
+          <p>En fonction de la couleur qui lui sera attribuée, cette personne devra répondre à une question perso.</p>
+          <p>Quoi de mieux pour apprendre à découvrir son équipe ! (Vous nous remercierez plus tard (ou pas).)</p>
         </div>
       </div>
       <div class="row">
     		<div class="col-sm-8 my-3 px-5">  
             <h3>Liste des couleurs</h3>
-            <p><b><span style="color: #B03060;">Rouge</span></b> : la personne devra dire l'un de ses loisirs préférés</p>
-            <p><b><span style="color: #016936;">Vert</span></b> : le personne devra dire l'un de ses lieux favoris sur cette planète</p>
-            <p><b><span style="color: #0E6EB8;">Bleu</span></b> : la personne devra dire l'un de ses souvenirs préférés</p>
-            <p><b><span style="color: #FFD700;">Jaune</span></b> : la personne devra dire l'un de ses boulots de rêve</p>
-            <p><b><span style="color: #B413EC;">Violet</span></b> : la personne devra dire l'un de ses plats préférés</p>
-            <p><b><span style="color: #FE9A76;">Orange</span></b> : la personne peut dire ce qu'elle veut (joker)</p>
+            <p><b><span class="text-danger">Rouge</span></b> : la personne devra parler de l'un de ses loisirs préférés.</p>
+            <p><b><span class="text-success">Vert</span></b> : le personne devra donner l'un de ses lieux favoris sur terre.</p>
+            <p><b><span class="text-info">Bleu</span></b> : la personne devra parler de l'un de ses souvenirs préférés.</p>
+            <p><b><span class="text-warning">Jaune</span></b> : la personne devra parler du job de ses rêves.</p>
+            <p><b><span style="color: #B413EC;">Violet</span></b> : la personne devra citer un de ses plats préférés.</p>
+            <p><b><span class="text-primary">Orange</span></b> : la personne peut parler de ce qu'elle veut (joker).</p>
         </div>
       </div>
     </div>

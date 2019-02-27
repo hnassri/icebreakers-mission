@@ -1,7 +1,32 @@
-
-<%= render 'questions/banner'%>
-<p>Le jeu est simple : nous allons prendre une personne au hasard, et lui poser une question. Cette personne devra répondre à cette question.</p>
-
-<h3>Comment jouer ?</h3>
-<p>Pour jouer, cliquer sur le bouton :</p>
-<%= link_to "Joue par ici", questions_path %>
+<section class ="bg-light">
+	<div class="container rounded box-shadow bg-white">
+  		<div class="row">
+    		<div class="col-sm-8">
+    			<img class="img-fluid" src="<%= image_url("teambuilding.jpg")%>" style='heigh:30%; width:100%;'/>
+    		</div>
+    		<div class="col-sm-4 pt-5">
+    			<h3>Le jeu des questions</h3>
+          <p class="text-secondary"> 01110001 01110101 01100101 01110011 01110100 01101001 01101111 01101110 01110011. </p>
+          <p class="text-secondary">(On a écrit "questions" en language binaire. Ouais, on est comme ça nous.)</p>
+    		</div>
+  		</div>
+  		<div class="row border border-ligth py-3">
+  			<div class="col-sm-8 pl-4">
+  				<p class="text-primary">Vous pouvez répeter la question...?<i class="text-primary fas fa-microphone ml-2 fa-2x"></i> </p>
+  			</div>
+  			<div class="col-sm-4">
+         <%= link_to " Let's begin ", questions_path, class: "btn btn-primary btn-lg btn-block" %>
+			</div>
+  		</div>
+  		<div class="row">
+    		<div class="col-sm-10 my-3 px-5">
+    			<h4>Les règles du jeu</h4>
+          <p class="text-secondary">Le jeu est simple : nous allons prendre une personne au hasard, et lui poser une question. </p>
+          <p class="text-secondary"> Cette personne devra répondre à cette question.</p>
+          <p class="text-secondary"> Cet exercice vous permettra de sympathiser avec votre équipe.</p>
+        </div>
+      </div>
+     </div>
+  </div>
+</div>
+</section>

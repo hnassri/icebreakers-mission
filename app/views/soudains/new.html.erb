@@ -1,20 +1,31 @@
-<%= render 'soudains/banner2'%>
-<div class="bg-cl bg-light">
-  <div class= "mx-5 my-5 ">
-	  <div class="container rounded box-shadow bg-white">
-      <div class= "row">
-        <div class="col-sm-8">
-          <h3 class="text-center">Les règles ?</h3>
-            <p>Le jeu va prendre une personne au hasard, puis elle devra imaginer une histoire avec 3 phrases. </p>
-            <p> À la fin de ces trois phrases, le jeu va insérer "PUIS SOUDAIN", et proposer à une personne du groupe tirée au hasard de continuer. </p>
-            <p>Cette personne devra dire 3 phrases, et ainsi de suite.</p>
-        </div>
-        <div class="col-sm-4 pt-5">
-          <h3>Tout compris ?</h3>
-          <p>Pour jouer, cliquer sur le bouton :</p>
-          <%= link_to " Let's begin ", soudains_path, class: "btn btn-primary btn-md" %>
+<section class ="bg-light">
+	<div class="container rounded box-shadow bg-white">
+  		<div class="row">
+    		<div class="col-sm-8">
+    			<img class="img-fluid" src="<%= image_url("puissoudain.jpg")%>" style='heigh:30%; width:100%;'/>
+    		</div>
+    		<div class="col-sm-4 pt-5">
+    			<h3>Le jeu du "Puis soudain"</h3>
+          <p class="text-secondary"> Le titre est assez explicite (enfin, quoique), mais on va détailler tout ça pour toi.</p>
+    		</div>
+  		</div>
+  		<div class="row border border-ligth py-3">
+  			<div class="col-sm-8 pl-4">
+  				<p class="text-primary">Ton équipe est-elle assez créative pour te suivre? <i class="text-primary fab fa-optin-monster ml-2 fa-2x"></i> </p>
+  			</div>
+  			<div class="col-sm-4">
+         <%= link_to " Let's begin ", soudains_path, class: "btn btn-primary btn-lg btn-block" %>
+			</div>
+  		</div>
+  		<div class="row">
+    		<div class="col-sm-8 my-3 px-5">
+    			<h4>Les règles du jeu</h4>
+            <p class="text-secondary">Le jeu va prendre une personne au hasard, cette personne devra ensuite imaginer le début d'une histoire avec 3 phrases. </p>
+            <p class="text-secondary"> À la fin de ces trois phrases, le jeu va insérer "PUIS SOUDAIN", et proposer à une autre personne du groupe tirée au hasard de continuer. </p>
+            <p class="text-secondary">Cette personne devra également continuer l'histoire 3 phrases, et ainsi de suite.</p>
         </div>
       </div>  
     </div>
   </div>
 </div>
+</section>
