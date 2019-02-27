@@ -13,6 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+
+/************************/
+/*         NAVBAR       */
+/************************/
+
+.nav-text a {
+  font-size: 18px;
+  text-decoration: none;	
+}
+
+.navbar-brand{
+font-family: 'Nunito', sans-serif !important;
+color: #E95420 !important;
+font-size: 22px  !important;
+}
+
+/**********/
+
+.bg-light {
+  padding: 1%;
+  background-color: #aea79f1f !important;
+}
  #LoginForm{
    padding: 8%;
  }
