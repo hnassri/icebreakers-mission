@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root to: 'users#index'
   resources :color, only: [:index, :new, :show, :destroy]
   resources :soudains, only: [:index, :new]
-  resources :truths, only: [:index]
+  resources :truths, only: [:index, :new]
   resources :questions, only: [:index,:new,:show,:destroy]
   resources :bd, only: [:index]
 end
