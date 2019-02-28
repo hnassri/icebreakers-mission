@@ -37,7 +37,7 @@ font-size: 22px  !important;
   background-color: #aea79f1f !important;
 }
  #LoginForm{
-   padding: 8%;
+   padding: 10%;
  }
 
  body{
@@ -82,4 +82,17 @@ font-size: 22px  !important;
   }
 .jumbotron {
   margin-bottom: 0px !important;
+}
+
+/*** USER CARDS **/
+
+.photo {
+  padding-top: 0.625rem;
+  display: table-cell;
+  width: 2rem;
+}
+.avatar {
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
