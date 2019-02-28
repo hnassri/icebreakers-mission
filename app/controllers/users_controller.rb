@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authenticate_group!, only: [:index]
-  before_action :create_game, only: [:index]
+  #before_action :create_game, only: [:index]
 
   def index
     @user  = User.new

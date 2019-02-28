@@ -1,4 +1,6 @@
 class QuestionsController < ApplicationController
+  before_action :authenticate_group!, only: [:index]
+  
   def index
     @member = User.where(group: current_group).all.sample
     @col = QuestionAndUser.where(user_id: @member.id).all.sample

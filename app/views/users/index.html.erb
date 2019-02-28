@@ -1,6 +1,5 @@
+<% if current_group %>
 <%= render 'users/banner'%>
-
-
 <section class="container-fluid">
     <h3>Les <span class="text-primary"> membres </span> de mon équipe</h3>
     <% current_group.users.each do |user| %>
@@ -20,3 +19,7 @@
     </div>
     <%end%>
 </section>
+
+<%else%>
+<%= render 'users/banner2' %>
+<%end%>

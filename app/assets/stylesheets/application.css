@@ -69,7 +69,17 @@ font-size: 22px  !important;
   font-size: 19px;
   font-weight: 400;
   }
- 
+
+  /* BANNER HOMEPAGE */
+  .banner-overlay2 {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(hacker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 250px;
+    padding-bottom:300px;
+  }
   /* BANNER 2 */
   .banner-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.37)), url(teambuilding.jpg) !important;
