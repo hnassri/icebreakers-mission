@@ -7,7 +7,7 @@
               <h3 class = "text-center title-user">C'est au tour de : <span class="text-primary"> <%= @member.nickname %> !</h3>
               <p>Voici une question pour toi :</p>
               <p><%= @question.content %></p>
-                <p><%= link_to "Joueur suivant", question_path(@col.id), method: :delete,  class: "btn btn-outline-primary btn-md btn-block" %></p>
+                <p><%= link_to "Joueur suivant", question_path(@col.id), method: :delete,  class: "btn btn-outline-primary btn-md" %></p>
             </div>
           </div>
           <% else %>
