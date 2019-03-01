@@ -1,24 +1,14 @@
-# README
+# Mission réalisée par Hamdi Nassri & Nora Bourouis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description de la mission 
+L'objectif était de pimper les jeux brises-glaces du premier jour qui étaient dépourvu de CSS et qui présentaient quelques bogues. 
 
-Things you may want to cover:
+## Organisation pour la mission : 
+Hamdi s'est occupé de la partie BACK-END, il a fait :
+- optimisation de la DB afin qu’une question ne soit pas posée deux fois à la même personne 
+- corrections des bugs
 
-* Ruby version
+Nora s'est occupée du Front-end : 
+- amélioration design de l’interface 
+- proposition de questions supplémentaires
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
