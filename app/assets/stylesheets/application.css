@@ -95,7 +95,20 @@ font-size: 22px  !important;
 }
 
 /*** USER CARDS **/
+#card-users{
+  margin:1%;
+}
+.title-user{
+  padding:3%;
+  border-bottom:1px lightgray solid;
+}
 
+.btn-user{
+  margin:3%;
+}
+.txt-user{
+  padding:1%;
+}
 .photo {
   padding-top: 0.625rem;
   display: table-cell;

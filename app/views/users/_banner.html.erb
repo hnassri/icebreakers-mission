@@ -5,10 +5,16 @@
                 <h2> Salut tout le monde </h2>
                 <P>Avant de commencer à jouer, il va falloir enregistrer les membres de ton équipe ci-dessous</P>      
             <%= form_tag(users_path, method: "post") do %>
-                <%= text_field_tag 'nickname', @user.nickname%>
-               <button class="btn btn-primary btn-md" type="submit"> Ajouter un Teammate</button>
-                <% end %>
-              </div> 
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <%= text_field_tag 'nickname', @user.nickname, class: "form-control", id:"inputDefault", placeholder: "Nom du moussaillon" %>
+                    <br/>
+                    <button class="btn btn-primary btn-md" type="submit"> Ajouter</button>
+                </div>   <% end %>
+                <div class="col-md-4"></div>
+            </div> 
           </div>
         </div>
       </div>
+  </div>

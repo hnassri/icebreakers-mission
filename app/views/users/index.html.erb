@@ -1,24 +1,28 @@
 <% if current_group %>
 <%= render 'users/banner'%>
-<section class="container-fluid">
-    <h3>Les <span class="text-primary"> membres </span> de mon équipe</h3>
-    <% current_group.users.each do |user| %>
-    <div class="row">
-      <div class="media border border mb-4 col-sm-8 pl-4">
-        <div class="avatar">
-          <img class="media-object img-raised photo" src="<%= image_url("bird.svg")%>" alt="image random" />
+<section class ="bg-light">
+	<div class="container rounded box-shadow bg-white">
+  <h3 class = "text-center title-user">Les <span class="text-primary"> membres </span> de mon équipe</h3>
+  		<div class="row">
+      <% current_group.users.each do |user| %>
+        <div class="media border border-light col-sm-8" id="card-users">
+          <div class="avatar">
+            <img class="media-object img-raised photo" src="<%= image_url("bird.svg")%>" alt="image random" />
+          </div>
+          <div class="media-body txt-user">
+              <h5 class="media-heading text-primary"><%= user.nickname %></h5>
+              <p class="text-secondary">Hey, bienvenue dans la team THP, <%= user.nickname %> </p>
+          </div>
         </div>
-        <div class="media-body ">
-            <h5 class="media-heading text-primary"><%= user.nickname %></h5>
-            <p class="text-secondary">Hey, bienvenue dans la team THP, <%= user.nickname %> </p>
+      <div class="col-sm-3 mb-4 btn-user">
+            <%= link_to "Supprimer ce membre", user_path(user.id), method: :delete, class: "btn btn-primary btn-md btn-block" %>
         </div>
-        <div class="col-sm-4">
-          <%= link_to "Supprimer ce membre", user_path(user.id), method: :delete, class: "btn btn-primary btn-md btn-block" %>
-        </div>
+        <%end%>
       </div>
+        
     </div>
-    <%end%>
 </section>
+
 
 <%else%>
 <%= render 'users/banner2' %>
