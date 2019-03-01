@@ -1,3 +1,5 @@
+Color.destroy_all
+Question.destroy_all
 
 Color.create(name: "Rouge", content: "La personne devra dire l'un de ses loisirs préférés", hex_code: "#B03060")
 Color.create(name: "Vert", content: "le personne devra dire l'un de ses lieux favoris sur cette planète", hex_code: "#016936")

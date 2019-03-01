@@ -1,7 +1,6 @@
 <section>
-<div class="page-header-image" style="background-image:url(hacker.jpg)"></div>
-<div class="container">
-  <div class="row">
+<div class="container container rounded box-shadow">
+  <div class="row" style="margin-bottom:10%;">
     <div class="col-md-6 offset-md-3">
       <br><br><br>
       <%= form_for resource, as: resource_name, url: registration_path(resource_name), html: { class: "form-signin mt-3" } do |f| %>
@@ -28,6 +27,6 @@
       <% end %>
       <%= render "devise/shared/links" %>
     </div>
-  </div>
+    </div>
   </div>
   </section>

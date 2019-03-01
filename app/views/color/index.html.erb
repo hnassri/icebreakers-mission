@@ -1,22 +1,25 @@
 <%= render 'color/banner2'%>
 <section class ="bg-light">
 	<div class="container rounded box-shadow bg-white">
+    <% if @var %>
   		<div class="row">
     		<div class="col-sm-8 text-center">
-          <% if @var %>
-
-          <h3 class = " title-user">C'est au tour de : <span class="text-primary"><%= @member.nickname %>!</span></h1>
+          <h3 class = "title-user">C'est au tour de : <span class="text-primary"><%= @member.nickname %>!</span></h1>
           <p>Tu viens de tirer la couleur <span style="color: ##{<%=@color.hex_code%>}"><%= @color.name %></span></p>
           <p><%= @color.content %></p>
-
-            <h3>Joueur suivant ?</h3>
-            <%= link_to "Joue par ici", color_path(@col.id), method: :delete,  class: "btn btn-primary btn-md btn-block" %>
-
-            <% else %>
-
-            <h1>Le jeu est fini </h1>
-            <%= link_to "Jeu suivant", new_question_path,  class: "btn btn-primary btn-md btn-block"  %>
-            <% end %>
+          <p><%= link_to "Joueur suivant", color_path(@col.id), method: :delete,  class: "btn btn-primary btn-md btn-block" %></p>
+        </div>
+      </div>
+    <% else %>
+            <div class="row" style= " padding:5%;">
+              <div class="col-sm-8" style="margin: auto;">
+                <h3 class="text-center">Le jeu est terminé <i class="fas fa-sad-tear"></i> </h3>
+              </div>
+              <div class="col-sm-4 centrer">
+                  <a href = "<%=  new_question_path%>" class= "btn btn-primary btn-lg centrer" style="align-self: center;"> Jeu suivant</a>
+              </div>
+            </div>
+    <% end %>
         </div>
 			</div>
 		</div>
