@@ -119,3 +119,9 @@ font-size: 22px  !important;
   padding-right: 10px;
 
 }
+
+.centrer{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}

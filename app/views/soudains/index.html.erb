@@ -1,7 +1,16 @@
 <%= render 'soudains/banner2'%>
-
-<h1><%= @member.nickname %> !</h1>
-<p>À toi de balancer 3 phrases !</p>
-<%= link_to "Joueur suivant", soudains_path %>
-
-<p>T'en as marre? <%= link_to "Clique ici", users_path %></p>
+<section class ="bg-light">
+	<div class="container rounded box-shadow bg-white">
+  		<div class="row">
+    		<div class="col-sm-8 text-center">
+         <h3 class = " title-user">C'est au tour de : <span class="text-primary"><%= @member.nickname %> !</span></h3>
+          <p>À toi de balancer 3 phrases !</p>
+          <p><%= link_to "Joueur suivant", soudains_path,  class: "btn btn-outline-primary btn-md" %></p>
+        </div>
+         <div class="text-center border border-light col-sm-4 centrer">
+          <a href = "<%= users_path%>" class= "btn btn-primary btn-md" style="align-self: center;"> Finir le jeu </a>
+        </div>
+  		</div>
+		</div>
+   
+	</section>

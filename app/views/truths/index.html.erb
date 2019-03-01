@@ -1,9 +1,21 @@
-<h1>On commence !</h1>
-<p>Voici l'ordre des participants :</p>
-<ul>
-	<% @members.each_with_index do |member, index| %>
-		<li>Personne n°<%=index+1%> : <%= member.nickname %></li>
-	<% end %>
-</ul>
-
-<%= button_to "Revenir à l'accueil", users_path %>
+<section class ="bg-light">
+	<div class="container rounded box-shadow bg-white">
+  		<div class="row">
+    		<div class="col-sm-8">
+					<h3 class="text-center title-user">Le jeu des deux vérités et un mensonge</h3> <br/>
+					<p>Voici l'ordre des participants :</p>
+					<ul>
+						<% @members.each_with_index do |member, index| %>
+							<li>Personne n°<%=index+1%> :  <span class="text-primary"><%= member.nickname %></span></li>
+						<% end %>
+					</ul>
+					<div class="col-sm-8 pl-4">
+  				<p class="text-primary"> Alors, saurez-vous décéler le vrai du faux ?  <i class="text-primary fas fa-user-secret ml-2 fa-2x"></i> </p>
+  			</div>
+				</div>
+				<div class="text-center border border-light col-sm-4 centrer">
+          <a href = "<%=  new_soudain_path %>" class= "btn btn-primary btn-lg" style="align-self: center;"> Jeu suivant</a>
+        </div>
+			</div>
+		</div>
+	</section>

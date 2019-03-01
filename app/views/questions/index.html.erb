@@ -1,14 +1,23 @@
 <%= render 'questions/banner'%>
-<% if @var %>
-<h1><%= @member.nickname %> !</h1>
-<p>Voici une question pour toi :<br>
-<%= @question.content %></p>
-
-<h3>Joueur suivant ?</h3>
-<%= link_to "Joue par ici", question_path(@col.id), method: :delete %>
-
-<% else %>
-
-<h1>Le jeu est terminé </h1>
-
-<% end %>
+<section class ="bg-light">
+	<div class="container rounded box-shadow bg-white">
+  		<div class="row">
+    		<div class="col-sm-8">
+          <% if @var %>
+          <h3 class = "text-center title-user">C'est au tour de : <span class="text-primary"> <%= @member.nickname %> !</h3>
+          <p>Voici une question pour toi :</p>
+          <p><%= @question.content %></p>
+          <h3>Joueur suivant ?</h3>
+            <%= link_to "Joue par ici", question_path(@col.id), method: :delete,  class: "btn btn-outline-primary btn-md btn-block" %>
+          <% else %>
+          <div class="row">
+          	<div class="col-sm-8 ">
+              <h3 class="text-center">Le jeu est terminé </h3>
+              <a href = "<%=  new_truth_path %>" class= "btn btn-primary btn-md centrer" style="align-self: center;"> Jeu suivant </a>
+            </div>
+          </div>
+            <% end %>
+        </div>
+			</div>
+		</div>
+	</section>
